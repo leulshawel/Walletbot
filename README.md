@@ -14,6 +14,7 @@ cd ./Walletbot
 open another terminal session (in the same dir)
 
 <h4>in bot session</h4>
+add your botapi token in the .env file
 
 ```sh
 cd ./bot

@@ -7,10 +7,10 @@ import { configDotenv } from 'dotenv'
 
 configDotenv()
 
-const TOKEN: string | undefined = process.env.TOKEN
+const TOKEN = process.env.TOKEN as string
 const WEB3_URI = process.env.WEB3_CLIENT_URI
 
-if (!TOKEN){
+if (TOKEN == ''){
     console.log('Bot token not provided')
     process.exit(1)
 }
