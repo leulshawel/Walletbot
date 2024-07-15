@@ -31,7 +31,7 @@ if you want to work with the main blockchain network
 ```sh
 npm start
 ```
-if you have a local geth (or other) blockchain running
+if you have geth (or other) local blockchain net running
 
 ```sh
 ENVIRONMENT=dev npm start
