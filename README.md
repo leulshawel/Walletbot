@@ -5,28 +5,34 @@ the bot won't work without the web3 service
 git clone https://github.com/leulshawel/Walletbot
 ```
 
-open two terminal sessions
+
+```sh
+cd ./Walletbot
+```
+
+open another terminal session (in the same dir)
 
 <h4>in bot session</h4>
 
 ```sh
-cd ./Walletbot/bot
-nom install
+cd ./bot
+npm install
 npm start
 ```
 
 <h4>in the web3 service session</h4><br>
 
 ```sh
-cd ./Walletbot/web3_service
+cd ./web3_service
 ```
 
-    if you want to work with the main blockchain network
+if you want to work with the main blockchain network
 
 ```sh
 npm start
 ```
-    if you have a local geth (or other) blockchain running
+if you have a local geth (or other) blockchain running
+
 ```sh
 ENVIRONMENT=dev npm start
 ```
