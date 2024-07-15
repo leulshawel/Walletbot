@@ -15,12 +15,14 @@ nom install
 npm start
 ```
 
-<h4>in the web3 service session</h4>
+<h4>in the web3 service session</h4><br>
 
 ```sh
 cd ./Walletbot/web3_service```
 ```
+
     if you want to work with the main blockchain network
+
 ```sh
 npm start
 ```
