@@ -1,5 +1,6 @@
-the bot and the web3 service are independent services 
-the bot won't work without the web3 service
+the bot and the web3 service are independent services<br>
+the bot won't work without the web3 service running<br>
+each service has a .env file for environment valiables
 
 ```sh
 git clone https://github.com/leulshawel/Walletbot
