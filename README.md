@@ -24,6 +24,7 @@ npm start
 
 ```sh
 cd ./web3_service
+npm install
 ```
 
 if you want to work with the main blockchain network
