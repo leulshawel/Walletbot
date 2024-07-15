@@ -36,6 +36,7 @@ npm start
 ```
 if you have geth (or other) local blockchain net running
 
+cahnge the DEV_NET uri in .env and run
 ```sh
 ENVIRONMENT=dev npm start
 ```
