@@ -18,7 +18,7 @@ npm start
 <h4>in the web3 service session</h4><br>
 
 ```sh
-cd ./Walletbot/web3_service```
+cd ./Walletbot/web3_service
 ```
 
     if you want to work with the main blockchain network
