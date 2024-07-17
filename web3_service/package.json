@@ -4,17 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node-dev ./src/index.ts"
+    "start": "node ./build/index.js",
+    "build": "tsc ./src/index.ts --moduleResolution nodenext --module nodenext --esModuleInterop --target es2015 --outDir ./build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/bitcore-lib": "^0.15.6",
-    "@types/dotenv": "^8.2.0",
-    "@types/ethereumjs-tx": "^2.0.0",
     "@types/express": "^4.17.21",
-    "@types/web3": "^1.2.2",
     "bitcore-lib": "^10.1.0",
     "dotenv": "^16.4.5",
     "ethereumjs-tx": "^2.1.2",
