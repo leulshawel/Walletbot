@@ -2,6 +2,8 @@ the bot and the web3 service are independent services<br>
 the bot won't work without the web3 service running<br>
 each service has a .env file for environment valiables
 
+
+
 ```sh
 git clone https://github.com/leulshawel/Walletbot
 ```
@@ -11,7 +13,14 @@ git clone https://github.com/leulshawel/Walletbot
 cd ./Walletbot
 ```
 
-open another terminal session (in the same dir)
+Simplest way (requires docker and docker-compose)
+
+```sh
+docker-compose up -d
+```
+
+
+open two terminal sessions (in Wallet directory)
 
 <h4>in bot session</h4>
 add your botapi token in the .env file

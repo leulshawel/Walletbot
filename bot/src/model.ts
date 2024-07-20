@@ -1,14 +1,11 @@
 import mongoose, { mongo } from 'mongoose'
-import { Types } from 'telegraf';
 
-interface BotAttrs{
-    Users: Number,
-}
 
 interface UserAtts{
     tg_id: Number;
     wallet: WalletDoc;
     refered_by: UserDoc;
+    last_seen: Number
 }
 
 
@@ -51,6 +48,10 @@ const UserSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         require: false,
         ref: 'user'
+    },
+    last_seen: {
+        type: Number,
+        require: true
     }
 })
 

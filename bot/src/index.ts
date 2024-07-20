@@ -1,15 +1,15 @@
 import mongoose  from 'mongoose'
-import { MongoMemoryServer } from 'mongodb-memory-server'
+// import { MongoMemoryServer } from 'mongodb-memory-server'
 import { bot } from './bot'
 
 
 async function start() {
     try{
         const MONGO_URI = process.env.MONGO_URI
-        const mongo = await MongoMemoryServer.create();
-        const uri = mongo.getUri();
-        const M = MONGO_URI != undefined
-        await mongoose.connect(M ? MONGO_URI : uri)
+        // const mongo = await MongoMemoryServer.create();
+        // const uri = mongo.getUri();
+        // const M = MONGO_URI != undefined
+        await mongoose.connect(MONGO_URI as string)
         console.log('connected to db')
     }catch (err){ console.log(err)}
 

@@ -149,7 +149,6 @@ export class Web3client {
             const res = await (Web3client.con.eth.sendSignedTransaction(serializedTxn)
             .then((res_)=> res_)
             .catch((e)=> { 
-                console.log(e)
                 return { status: false, reason: e.reason}}))
             return res
         }catch(err: any){ return { status: false, reason: err.message} }
