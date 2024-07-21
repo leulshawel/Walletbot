@@ -11,6 +11,8 @@ git clone https://github.com/leulshawel/Walletbot
 
 ```sh
 cd ./Walletbot
+npm run build-bot
+npm run build-web3
 ```
 
 Simplest way (requires docker and docker-compose)
@@ -28,7 +30,6 @@ add your botapi token in the .env file
 ```sh
 cd ./bot
 npm install
-npm run build
 npm start
 ```
 
@@ -37,7 +38,6 @@ npm start
 ```sh
 cd ./web3_service
 npm install
-npm run build
 ```
 
 if you want to work with the main blockchain network

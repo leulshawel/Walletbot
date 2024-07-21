@@ -1,0 +1,13 @@
+{
+  "name": "bot2",
+  "version": "1.0.0",
+  "description": "the bot and the web3 service are independent services<br> the bot won't work without the web3 service running<br> each service has a .env file for environment valiables",
+  "main": "index.js",
+  "scripts": {
+    "build-bot": "tsc ./bot/src/index.ts --moduleResolution nodenext --module nodenext --esModuleInterop --target es2015 --outDir ./bot/build",
+    "build-web3": "tsc ./web3_service/src/index.ts --moduleResolution nodenext --module nodenext --esModuleInterop --target es2015 --outDir ./web3_service/build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

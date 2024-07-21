@@ -9,34 +9,34 @@ services:
     build:
       context: ./bot/
       dockerfile: Dockerfile
-    depends_on:
-      - mongo
+    # depends_on:
+    #   - mongo
     environment:
       - MONGO_URI=mongodb://mongo:27017
       - WEB3_CLIENT_URI=http://web3:4444/api
     networks:
       - app-network
 
-  web3:
-    container_name: web3
-    build:
-      context: ./web3_service/
-      dockerfile: Dockerfile
-    image: leulshawell/bots:web3
-    networks:
-      - app-network
+#   web3:
+#     container_name: web3
+#     image: leulshawell/bots:web3
+#     build:
+#       context: ./web3_service/
+#       dockerfile: Dockerfile
+#     networks:
+#       - app-network
 
-  mongo:
-    image: mongo:latest
-    container_name: mongo
-    networks:
-      - app-network
-    volumes:
-      - mongo-data:/data/db 
+#   mongo:
+#     image: mongo:latest
+#     container_name: mongo
+#     networks:
+#       - app-network
+#     volumes:
+#       - mongo-data:/data/db 
 
 networks:
   app-network:
     driver: bridge
 
-volumes:
-  mongo-data:
+# volumes:
+#   mongo-data:
