@@ -3,6 +3,7 @@ the bot won't work without the web3 service running<br>
 each service has a .env file for environment valiables
 
 
+<b>!looking for a free hosting platform that supports docker-compose</b>
 
 ```sh
 git clone https://github.com/leulshawel/Walletbot
