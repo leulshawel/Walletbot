@@ -6,10 +6,6 @@ each service has a .env file for environment valiables
 
 ```sh
 git clone https://github.com/leulshawel/Walletbot
-```
-
-
-```sh
 cd ./Walletbot
 npm run build-bot
 npm run build-web3
@@ -21,7 +17,7 @@ Simplest way (requires docker and docker-compose)
 docker-compose up -d
 ```
 
-
+if you wanna do it manually 
 open two terminal sessions (in Wallet directory)
 
 <h4>in bot session</h4>
