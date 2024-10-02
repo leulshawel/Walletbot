@@ -1,9 +1,18 @@
-the bot and the web3 service are independent services<br>
-the bot won't work without the web3 service running<br>
-each service has a .env file for environment valiables
+This is a Micro-Service Architecture Blockchain wallet telegram bot
+
+**How it works**
+  The web3 and the bot are independent services. The bot requires atleast one instance of the web3 service up and running.
+  All requests to the bot that require interaction with any of the supported blockchains will be forwarded to the web3 serive
+  which will send the response after handling the requests.
 
 
-<b>!looking for a free hosting platform that supports docker-compose</b>
+**Tech stack**:
+  Language: typeScript
+  runtime: node
+  web3-library: web3.js
+  telegram bot library: telegraf.js
+
+**Getting started**
 
 ```sh
 git clone https://github.com/leulshawel/Walletbot
