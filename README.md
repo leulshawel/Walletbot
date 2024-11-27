@@ -6,11 +6,11 @@ This is a Micro-Service Architecture Blockchain wallet telegram bot
   which will send the response after handling the requests.
 
 
-**Tech stack**:
-  Language: typeScript
-  runtime: node
-  web3-library: web3.js
-  telegram bot library: telegraf.js
+**Tech stack**:<br>
+  Language: typeScript<br>
+  runtime: node<br>
+  web3-library: web3.js<br>
+  telegram bot library: telegraf.js <br>
 
 **Getting started**
 
