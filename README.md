@@ -1,6 +1,6 @@
 This is a Micro-Service Architecture Blockchain wallet telegram bot
 
-**How it works**
+**How it works**<b>
   The web3 and the bot are independent services. The bot requires atleast one instance of the web3 service up and running.
   All requests to the bot that require interaction with any of the supported blockchains will be forwarded to the web3 serive
   which will send the response after handling the requests.
